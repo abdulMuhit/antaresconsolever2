@@ -1,0 +1,41 @@
+// Custom variables
+@import "variables";
+
+// Import styles with default layout.
+@import "node_modules/@coreui/coreui-pro/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+ 
+.navbar-brand {
+    display: inline-block;
+    width: 240px;
+    height: 55px;
+    padding: 0.5rem 1rem;
+    margin-right: 0;
+    background-color: transparent !important;
+    background-image: url(/img/logox.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 120px auto;
+    border-bottom: none !important;
+}
+
+.sidebar-nav > section > ul > li > a.active {
+    background-color: #d96c22 !important;
+}
+
+@media (max-width: 991.98px) {
+.app-header {
+    position: fixed;
+    z-index: 1020;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #f3f3f3 !important;
+} 
+}
+
+.sidebar-nav > section > ul > li > a:hover {
+    background-color: #d96c22 !important;
+}
