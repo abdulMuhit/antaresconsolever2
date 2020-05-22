@@ -30,7 +30,8 @@ export default new Router({
   },
   routes: [
     {
-      path: '/dashboard',
+      path: '/',
+      redirect: '/dashboard',
       name: 'Home',
       component: DefaultContainer,
       children: [
@@ -52,8 +53,7 @@ export default new Router({
       ]
     },
     {
-      path: '/',
-      redirect: '/login',
+      path: 'login',
       name: 'Pages',
       component: BaseContainer,
       component: {
@@ -61,22 +61,22 @@ export default new Router({
       },
       children: [
         {
-          path: '404',
+          path: '/404',
           name: 'Page404',
           component: Page404
         },
         {
-          path: '500',
+          path: '/500',
           name: 'Page500',
           component: Page500
         },
         {
-          path: 'login',
+          path: '/login',
           name: 'Login',
           component: Login
         },
         {
-          path: 'register',
+          path: '/register',
           name: 'Register',
           component: Register
         }
